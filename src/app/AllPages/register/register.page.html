@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Register User</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Email Address</ion-label>
+    <ion-input type="text" [(ngModel)]="email" name="email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="password" name="password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Date Of Birth</ion-label>
+    <ion-input type="text" [(ngModel)]="dob" name="dob"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Gender</ion-label>
+    <ion-input type="text" [(ngModel)]="gender" name="gender"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Bio</ion-label>
+    <ion-input type="text" [(ngModel)]="bio" name="bio"></ion-input>
+  </ion-item>
+
+
+  <ion-row>
+    <ion-col>
+      <ion-button type="submit" (click)="register()" expand="block">Register</ion-button>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-col>
+      <ion-button type="submit" (click)="goforLogin()" expand="block">Go For Login</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-content>

@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "firebase-capacitor",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
